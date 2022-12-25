@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A developer's CMS toolkit for Django, with an emphasis on simplicity, speed, and familiarity.">
+  <link rel="icon" href="icon.png">
+  <title>UnCMS, a CMS toolkit for Django</title>
+
+  <style>
+    :root {
+      --color-background: #fafafa;
+      --color-body: #060000;
+      --color-link: #2222dd;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #222;
+        --color-body: #f0f0f0;
+        --color-link: #ccccff;
+      }
+    }
+
+    body {
+      font-family: "Helvetica", "FreeSans", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin: 0;
+
+      background-color: var(--color-background);
+      color: var(--color-body);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    a {
+      color: var(--color-link);
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    .main__body {
+      margin: auto;
+      text-align: center;
+    }
+
+    .main__logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    .main__logo svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .fill-body {
+      fill: var(--color-body);
+    }
+
+    .main__addendum {
+      font-size: 60%;
+    }
+
+    code {
+      display: inline-block;
+      padding: 5px;
+      background-color: rgba(128, 128, 128, 0.2);
+    }
+
+    .inline-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .inline-links__item {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+
+    .inline-links__item:not(:last-child)::after {
+      content: ' • ';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main__body">
+      <div class="main__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.9 70.2" height="265.2" width="774.4">
+          <path d="m22.4 17.5-5 5L30.1 35 17.5 47.8l4.9 5L35.1 40l12.7 12.7 5-5L40 35.2l12.7-12.7-5-5-12.6 12.7z" color="#000" fill="#d40000"/>
+          <path class="fill-body" d="M0 0v70.2h70.2V0Zm5.5 5.5h59.2v59.2H5.5Z"/>
+          <path class="fill-body" d="M82.6 47.9v-28h4.6l1 27.8h9.5l1-27.7h4.6v27.9l-3.9 3.9h-13zm25.4 3.9V29.5h16.8l3.9 3.8v18.5h-4.6l-1-18.3-10.3-1v19.3zm25.4-28 3.8-3.8h13l3.9 3.8V28h-4.5l-1.9-4.9-8.7 1v23.8l8.7 1 2-5h4.4V48l-3.9 3.9h-13l-3.8-3.9zm25.4 28V20h4l6.3 9.5h1.7L177 20h4v31.8h-4.8V28.7l-6.4 8-6.3-8v23zm25.4-28L188 20h13l3.9 3.8V28h-4.5l-1.9-4.9-8.7 1v9.5l11 1 4.1 3.2V48l-3.9 3.9h-13l-3.8-3.9v-4.1h4.5l1.9 5 8.7-1v-9.6l-11.1-1-4-3.2z"/>
+        </svg>
+      </div>
+
+      <div class="main__text">
+        <p class="main__text">
+          UnCMS is a developer's CMS toolkit for Django emphasising simplicity, speed, and familiarity.
+        </p>
+
+        <p>
+          <strong>
+            UnCMS is currently in alpha.
+            It is recommended only for the curious and fearless.
+            Do not use it in production.
+          </strong>
+        </p>
+
+        <p class="main__install">
+          <code>pip install uncms</code>
+        </p>
+
+        <p class="main__addendum">
+          Requires Django &gt;= 3.2. BSD licensed.
+        </p>
+      </div>
+
+      <div class="main__links">
+        <ul class="inline-links">
+          <li class="inline-links__item">
+            <a href="https://docs.uncms.dev/">Documentation</a>
+          </li>
+
+          <li class="inline-links__item">
+            <a href="https://github.com/uncms-dev/uncms">Code</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
